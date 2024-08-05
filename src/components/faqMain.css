@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600,700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+.cs-w {
+    width: 50% !important;
+}
+
+.cs-h {
+    min-height: 100vh;
+}
+
+.cs-bg-image {
+    background-color: hsl(275, 100%, 97%) !important;
+    background: url('../assets/images/background-pattern-desktop.svg') no-repeat top center / 100%;
+}
+
+/*Font*/
+.cs-fw-6 {
+    font-weight: 600 !important;
+}
+
+.cs-fw-7 {
+    font-weight: 700 !important;
+}
+
+.cs-fc {
+    color: hsl(292, 42%, 14%) !important;
+}
+
+.cs-fc-2 {
+    color: hsl(292, 16%, 49%) !important;
+}
+
+/*Accordion*/
+.accordion-button {
+    color: hsl(292, 42%, 14%) !important;
+    font-weight: 600 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+}
+  
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:hover {
+    color: #AD28EB !important;
+}
+
+.accordion-button::after {
+    background: url('../assets/images/icon-plus.svg') no-repeat center / 25px 25px !important;
+    transition: .3s !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: url('../assets/images/icon-minus.svg') no-repeat center / 25px 25px !important;
+}
+
+@media (max-width: 921px) {
+    .cs-bg-image {
+        background: url('../assets/images/background-pattern-mobile.svg') no-repeat top center / 100%;
+    }
+
+    .cs-w {
+        width: 95% !important;
+    }
+}
